@@ -13,10 +13,10 @@ $(document).ready(function () {
       },
       dataSrc: function (apiResponse) {
         var recordsTotal = apiResponse?.data?.count;
-        var recordsFiltered = recordsTotal;
+        
         $.extend(apiResponse, {
           recordsTotal: recordsTotal,
-          recordsFiltered: recordsFiltered
+          recordsFiltered: recordsTotal
         });
         return apiResponse?.data?.results;
       },
