@@ -10,7 +10,7 @@ $(document).ready(function () {
       { data: "id" },
       { data: "name" },
       { data: "email" },
-      { data: "phone_number" },
+      { data: "phone_number"},
       { data: "address" }
     ]
   });
